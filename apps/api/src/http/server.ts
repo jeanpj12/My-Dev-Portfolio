@@ -63,4 +63,4 @@ app.register(createPost);
 app.register(getPosts);
 app.register(getPost);
 
-app.listen({ port: env.SERVER_PORT }).then(() => console.log("server is running"));
+app.listen({ port: env.PORT }).then(() => console.log("server is running"));
