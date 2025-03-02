@@ -1,5 +1,5 @@
 {
-  "name": "myDevPort",
+  "name": "my-dev-portfolio",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -19,6 +19,7 @@
   "packageManager": "npm@10.9.2",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "config/*"
   ]
 }
