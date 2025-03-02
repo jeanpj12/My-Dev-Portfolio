@@ -5,7 +5,9 @@
         "dev": "npm run env:load tsx watch src/http/server.ts",
         "db:migrate": "npm run env:load prisma migrate dev",
         "db:studio": "npm run env:load prisma studio",
-        "env:load": "dotenv -e ../../.env --"
+        "env:load": "dotenv -e ../../.env --",
+        "build": "tsup",
+        "start": "node dist/http/server.js"
     },
     "dependencies": {
         "@fastify/cors": "^11.0.0",
@@ -22,12 +24,13 @@
         "zod": "^3.24.2"
     },
     "devDependencies": {
-        "@types/bcrypt": "^5.0.2",
         "@repo/eslint-config": "*",
         "@repo/prettier": "*",
         "@repo/tsconfig": "*",
+        "@types/bcrypt": "^5.0.2",
         "dotenv-cli": "^8.0.0",
-        "prisma": "^6.3.1"
+        "prisma": "^6.3.1",
+        "tsup": "^8.4.0"
     },
     "prisma": {
         "seed": "tsx prisma/seed.ts"
