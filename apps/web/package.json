@@ -2,10 +2,11 @@
     "name": "@repo/web",
     "version": "0.1.0",
     "private": true,
+
     "scripts": {
         "dev": "dotenv -e ../../.env -- next dev --turbopack",
         "build": "next build",
-        "start": "next start",
+        "start": "dotenv -e ../../.env -- next start",
         "lint": "next lint"
     },
     "dependencies": {
@@ -29,6 +30,7 @@
         "@tiptap/pm": "^2.11.5",
         "@tiptap/react": "^2.11.5",
         "@tiptap/starter-kit": "^2.11.5",
+        "@typescript-eslint/eslint-plugin": "^8.25.0",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "cmdk": "^1.0.0",
@@ -49,6 +51,7 @@
         "@repo/eslint-config": "*",
         "@repo/prettier": "*",
         "@repo/tsconfig": "*",
+        "@rocketseat/eslint-config": "^2.2.2",
         "@tailwindcss/postcss": "^4",
         "@types/node": "^20",
         "@types/react": "^19",
@@ -56,10 +59,5 @@
         "tailwindcss": "^4.0.9",
         "typescript": "^5"
     },
-    "prettier": "@souls/prettier",
-    "eslintConfig": {
-        "extends": [
-            "@souls/eslint-config/next"
-        ]
-    }
+    "prettier": "@repo/prettier"
 }
