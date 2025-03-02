@@ -7,10 +7,10 @@ export const env = createEnv({
         DATABASE_URL: z.string().url(),
         JWT_SECRET: z.string(),
     },
-    client: {
+    client: {},
+    shared: {
         NEXT_PUBLIC_API_URL: z.string().url(),
     },
-    shared: {},
     runtimeEnv: {
         PORT: process.env.PORT,
         DATABASE_URL: process.env.DATABASE_URL,
